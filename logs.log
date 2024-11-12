@@ -17170,3 +17170,156 @@ Please also refer to the documentation for alternative solver options:
 2024-11-12 07:57:18,175:WARNING:No coef_ found. Trying feature_importances_
 2024-11-12 07:57:19,307:INFO:Visual Rendered Successfully
 2024-11-12 07:57:19,554:INFO:plot_model() successfully completed......................................
+2024-11-12 08:01:23,604:INFO:Initializing save_model()
+2024-11-12 08:01:23,605:INFO:save_model(model=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=123, verbose=0,
+                     warm_start=False), model_name=my_first_pipeline, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\david\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['MinTemp', 'MaxTemp', 'Rainfall',
+                                             'Evaporation', 'Sunshine',
+                                             'WindGustSpeed', 'WindSpeed9am',
+                                             'WindSpeed3pm...
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0))),
+                ('rest_encoding',
+                 TransformerWrapper(exclude=None, include=['Date'],
+                                    transformer=TargetEncoder(cols=['Date'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              hierarchy=None,
+                                                              min_samples_leaf=20,
+                                                              return_df=True,
+                                                              smoothing=10,
+                                                              verbose=0)))],
+         verbose=False), verbose=True, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2024-11-12 08:01:23,605:INFO:Adding model into prep_pipe
+2024-11-12 08:01:24,295:INFO:my_first_pipeline.pkl saved in current working directory
+2024-11-12 08:01:24,368:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['MinTemp', 'MaxTemp', 'Rainfall',
+                                             'Evaporation', 'Sunshine',
+                                             'WindGustSpeed', 'WindSpeed9am',
+                                             'WindSpeed3pm', 'Humidity9am',
+                                             'Humidity3pm', 'Pressure9...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      monotonic_cst=None, n_estimators=100,
+                                      n_jobs=-1, oob_score=False,
+                                      random_state=123, verbose=0,
+                                      warm_start=False))],
+         verbose=False)
+2024-11-12 08:01:24,369:INFO:save_model() successfully completed......................................
+2024-11-12 08:01:29,264:INFO:Initializing load_model()
+2024-11-12 08:01:29,264:INFO:load_model(model_name=my_first_pipeline, platform=None, authentication=None, verbose=True)
+2024-11-12 08:05:20,240:INFO:Initializing predict_model()
+2024-11-12 08:05:20,248:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C52658F8E0>, estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=123, verbose=0,
+                     warm_start=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C52796B760>)
+2024-11-12 08:05:20,249:INFO:Checking exceptions
+2024-11-12 08:05:20,249:INFO:Preloading libraries
+2024-11-12 08:05:20,256:INFO:Set up data.
+2024-11-12 08:05:20,382:INFO:Set up index.
+2024-11-12 08:06:06,133:INFO:Initializing predict_model()
+2024-11-12 08:06:06,134:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C52658F8E0>, estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=123, verbose=0,
+                     warm_start=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C5419227A0>)
+2024-11-12 08:06:06,135:INFO:Checking exceptions
+2024-11-12 08:06:06,136:INFO:Preloading libraries
+2024-11-12 08:06:06,149:INFO:Set up data.
+2024-11-12 08:06:06,327:INFO:Set up index.
+2024-11-12 08:06:45,765:INFO:Initializing plot_model()
+2024-11-12 08:06:45,766:INFO:plot_model(plot=confusion_matrix, fold=None, verbose=True, display=None, display_format=None, estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=123, verbose=0,
+                     warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C52658F8E0>, system=True)
+2024-11-12 08:06:45,766:INFO:Checking exceptions
+2024-11-12 08:06:45,942:INFO:Preloading libraries
+2024-11-12 08:06:46,546:INFO:Copying training dataset
+2024-11-12 08:06:46,546:INFO:Plot type: confusion_matrix
+2024-11-12 08:06:47,262:INFO:Fitting Model
+2024-11-12 08:06:47,264:INFO:Scoring test/hold-out set
+2024-11-12 08:06:48,823:INFO:Visual Rendered Successfully
+2024-11-12 08:06:49,261:INFO:plot_model() successfully completed......................................
+2024-11-12 08:07:29,110:INFO:Initializing predict_model()
+2024-11-12 08:07:29,111:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C52658F8E0>, estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=123, verbose=0,
+                     warm_start=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C5418588B0>)
+2024-11-12 08:07:29,111:INFO:Checking exceptions
+2024-11-12 08:07:29,111:INFO:Preloading libraries
+2024-11-12 08:07:29,120:INFO:Set up data.
+2024-11-12 08:07:29,498:INFO:Set up index.
+2024-11-12 08:08:22,072:INFO:Initializing plot_model()
+2024-11-12 08:08:22,072:INFO:plot_model(plot=confusion_matrix, fold=None, verbose=True, display=None, display_format=None, estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=123, verbose=0,
+                     warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C52658F8E0>, system=True)
+2024-11-12 08:08:22,072:INFO:Checking exceptions
+2024-11-12 08:08:22,303:INFO:Preloading libraries
+2024-11-12 08:08:22,839:INFO:Copying training dataset
+2024-11-12 08:08:22,840:INFO:Plot type: confusion_matrix
+2024-11-12 08:08:23,731:INFO:Fitting Model
+2024-11-12 08:08:23,734:INFO:Scoring test/hold-out set
+2024-11-12 08:08:24,836:INFO:Visual Rendered Successfully
+2024-11-12 08:08:25,231:INFO:plot_model() successfully completed......................................
+2024-11-12 08:08:34,093:INFO:Initializing plot_model()
+2024-11-12 08:08:34,095:INFO:plot_model(plot=auc, fold=None, verbose=True, display=None, display_format=None, estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=123, verbose=0,
+                     warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C52658F8E0>, system=True)
+2024-11-12 08:08:34,095:INFO:Checking exceptions
+2024-11-12 08:08:34,362:INFO:Preloading libraries
+2024-11-12 08:08:35,237:INFO:Copying training dataset
+2024-11-12 08:08:35,238:INFO:Plot type: auc
+2024-11-12 08:08:36,667:INFO:Fitting Model
+2024-11-12 08:08:36,671:INFO:Scoring test/hold-out set
+2024-11-12 08:08:38,050:INFO:Visual Rendered Successfully
+2024-11-12 08:08:38,519:INFO:plot_model() successfully completed......................................
