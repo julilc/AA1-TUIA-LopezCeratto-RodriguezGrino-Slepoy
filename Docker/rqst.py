@@ -1,8 +1,13 @@
+import warnings
+warnings.filterwarnings("ignore")
+import os
+# Configura el nivel de log a 3 (solo errores, sin advertencias o mensajes informativos)
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import sklearn
 from sklearn.preprocessing import LabelEncoder
 from tensorflow.keras.metrics import Recall
 import tensorflow as tf
-import tensorflow as tf
+tf.get_logger().setLevel('ERROR')  # Esto solo muestra errores y oculta los warnings
 import pickle
 import sys
 import numpy as np
