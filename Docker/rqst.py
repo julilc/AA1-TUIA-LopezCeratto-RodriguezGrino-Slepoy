@@ -10,6 +10,7 @@ import pandas as pd
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.models import load_model
 
 
 class CustomRecallMetric(tf.keras.metrics.Metric):
