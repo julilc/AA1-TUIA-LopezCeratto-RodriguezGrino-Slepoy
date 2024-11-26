@@ -1,7 +1,7 @@
 
 ##### Uso mediante Docker
 Para descargar la imagen:
-docker pull julilc/austr_rain_app:v2
+docker pull julilc/austr_rain_app:v3
 
 Para correr la imagen:
 docker run -it --rm <usuario>/austr_rain_app:v3
