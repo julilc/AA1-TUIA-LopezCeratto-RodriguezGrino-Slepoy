@@ -1,0 +1,4 @@
+Date,Location,MinTemp,MaxTemp,Rainfall,Evaporation,Sunshine,WindGustDir,WindGustSpeed,WindDir9am,WindDir3pm,WindSpeed9am,WindSpeed3pm,Humidity9am,Humidity3pm,Pressure9am,Pressure3pm,Cloud9am,Cloud3pm,Temp9am,Temp3pm,RainToday
+2008-12-04,Williamtown,15.5,25.3,0.0,5.4,10.0,NW,30,N,W,10,20,80,60,1012,1010,2,1,18.3,23.5,No
+2017-06-21,AliceSprings,13.2,22.8,5.2,4.3,8.1,SE,40,E,S,15,25,85,70,1015,1012,4,3,16.7,21.2,Yes
+

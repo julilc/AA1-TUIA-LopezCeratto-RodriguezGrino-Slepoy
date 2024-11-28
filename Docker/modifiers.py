@@ -2,6 +2,9 @@ import warnings
 warnings.filterwarnings("ignore")
 import pandas as pd
 import numpy as np
+import tensorflow as tf
+tf.get_logger().setLevel('ERROR')  # Esto solo muestra errores y oculta los warnings
+
 
 def obtener_estacion(mes):
     '''
