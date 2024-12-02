@@ -146,7 +146,7 @@ if __name__ == '__main__':
                 'Prediccion': resultado,
                 'Probabilidad de lluvia': prob_lluvia[i]})
         else:
-            if prob_lluvia <0.5:
+            if prob_lluvia <rnn_rain.umbral:
                 resultado= 'No llueve'
             else:
                 resultado = 'Llueve'
