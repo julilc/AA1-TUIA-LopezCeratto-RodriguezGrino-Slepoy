@@ -1,10 +1,10 @@
 
 ##### Uso mediante Docker
 Para descargar la imagen:
-docker pull julilc/austr_rain_app:v6
+docker pull julilc/austr_rain_app:v7
 
 Para correr la imagen:
-docker run --rm -v "<carpeta_contenedora_de_tu_csv_en_tu_pc>:/app/data" -v "<carpeta_donde_se_guarde_el_csv_salida_en_tu_pc>:/app/output" julilc/austr_rain_app:v6 '/app/inferencia.py' '/app/data/weather_sample.csv'
+docker run --rm -v "<carpeta_contenedora_de_tu_csv_en_tu_pc>:/app/data" -v "<carpeta_donde_se_guarde_el_csv_salida_en_tu_pc>:/app/output" julilc/austr_rain_app:v7 '/app/inferencia.py' '/app/data/weather_sample.csv'
 
 Subimos y utilizamos el archivo weather_samples dentro de la carpeta /src
 
