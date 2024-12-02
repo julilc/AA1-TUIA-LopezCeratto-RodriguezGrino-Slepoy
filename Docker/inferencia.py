@@ -32,10 +32,10 @@ def cheq(datos):
     ciudades = ['Williamtown', 'MountGinini', 'Bendigo', 'Portland', 'Watsonia', 'Dartmoor', 'Townsville', 'Launceston', 'AliceSprings', 'Katherine']
     coordenadas = ['N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE', 'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW']
     cols_mayor_a_0 = ['Rainfall', 'Evaporation', 'Sunshine', 'WindGustSpeed', 'WindSpeed9am', 'WindSpeed3pm', 
-                      'Humidity9am', 'Humidity3pm', 'Pressure9am', 'Pressure3pm', 'Cloud9am', 'Cloud3pm', 'Temp9am', 'Temp3pm']
+                      'Humidity9am', 'Humidity3pm', 'Pressure9am', 'Pressure3pm', 'Cloud9am', 'Cloud3pm']
     cols_coordenadas = ['WindDir9am', 'WindDir3pm']
     contador = 1
-    col_temps = ['MinTemp', 'MaxTemp']
+    col_temps = ['MinTemp', 'MaxTemp', 'Temp9am', 'Temp3pm']
 
     indices = range(len(datos))
     
@@ -128,6 +128,7 @@ if __name__ == '__main__':
         rnn_rain = load_model("rnn.h5", custom_objects={"CustomRecallMetric": CustomRecallMetric})
 
         mediana_moda = pd.read_csv('imputers.csv')
+        mediana_moda.set_index('Month', inplace= True)
 
         with open('scalers.pkl', 'rb') as scaler_file:
             scaler = pickle.load(scaler_file)

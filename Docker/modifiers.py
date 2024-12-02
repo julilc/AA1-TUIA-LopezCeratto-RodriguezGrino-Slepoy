@@ -24,7 +24,7 @@ def llenar_faltantes_por_mes(fila, df_mediana_moda):
     Dado una fila y los valores de media y moda para cada columna y mes,
     llena los datos faltantes de dicha fila
     '''
-    mes = fila['Month']
+    mes = int(fila['Month'])
     
     # Iterar sobre las columnas del DataFrame
     for columna in fila.index:
