@@ -138,7 +138,7 @@ if __name__ == '__main__':
         if len(prob_lluvia)>1:
             for i in range(len(prob_lluvia)):
                 
-                if prob_lluvia[i] <0.5:
+                if prob_lluvia[i] <rnn_rain:
                     resultado= 'No llueve'
                 else:
                     resultado = 'Llueve'
